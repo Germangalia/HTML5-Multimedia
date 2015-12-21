@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Exemples de reproductor de Video i Audio en HTML5</title>
+    <link href="http://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet">
+
+    <!-- If you'd like to support IE8 -->
+    <script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
 </head>
 <body>
 <video id="demovideo" src="https://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956_512kb.mp4" preload="auto" controls></video>
@@ -49,5 +53,10 @@
     <button onclick="document.getElementById('demo3').volume+=0.1">+ Volum</button>
     <button onclick="document.getElementById('demo3').volume-=0.1">- Volum</button>
 </div>
+
+<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"data-setup="{}">
+    <source src="https://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956_512kb.mp4" type='video/mp4'>
+</video>
+<script src="http://vjs.zencdn.net/5.4.4/video.js"></script>
 </body>
 </html>
