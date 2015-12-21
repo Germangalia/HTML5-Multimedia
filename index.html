@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Exemples de reproductor de Video i Audio en HTML5</title>
 </head>
 <body>
+<video id="demovideo" src="https://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956_512kb.mp4" preload="auto" controls></video>
 
+<div>
+    <button onclick="document.getElementById('demovideo').play()">Play Video</button>
+    <button onclick="document.getElementById('demovideo').pause()">Pausar Video</button>
+    <button onclick="document.getElementById('demovideo').volume+=0.1">+ Volum</button>
+    <button onclick="document.getElementById('demovideo').volume-=0.1">- Volum</button>
+</div>
+
+<div class="test">Back in black:</div>
+
+<audio id="demo" src="http://sampleswap.org/mp3/artist/5101/Peppy--The-Firing-Squad_YMXB-160.mp3" preload="auto" controls></audio>
+
+<div>
+    <button onclick="document.getElementById('demo').play()">Play Audio</button>
+    <button onclick="document.getElementById('demo').pause()">Pausar Audio</button>
+    <button onclick="document.getElementById('demo').volume+=0.1">+ Volum</button>
+    <button onclick="document.getElementById('demo').volume-=0.1">- Volum</button>
+</div>
+
+
+
+<div class="test">Audio Another day in paradise:</div>
+
+<audio id="demo2" src="http://sampleswap.org/mp3/artist/20409/belabar_Sunny9-160.mp3" preload="auto" controls></audio>
+
+<div>
+    <button onclick="document.getElementById('demo2').play()">Play Audio</button>
+    <button onclick="document.getElementById('demo2').pause()">Pausar Audio</button>
+    <button onclick="document.getElementById('demo2').volume+=0.1">+l Volum</button>
+    <button onclick="document.getElementById('demo2').volume-=0.1">- Volum</button>
+</div>
+
+<div class="test">Audio Bullet in the head:</div>
+
+<audio id="demo3" src="http://sampleswap.org/mp3/artist/30356/Mads-Nielsen_Ambience2-160.mp3" preload="auto" controls></audio>
+
+
+<div>
+    <button onclick="document.getElementById('demo3').play()">Play Audio</button>
+    <button onclick="document.getElementById('demo3').pause()">Pausar Audio</button>
+    <button onclick="document.getElementById('demo3').volume+=0.1">+ Volum</button>
+    <button onclick="document.getElementById('demo3').volume-=0.1">- Volum</button>
+</div>
 </body>
 </html>
