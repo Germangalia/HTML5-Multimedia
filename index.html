@@ -7,6 +7,7 @@
 
     <!-- If you'd like to support IE8 -->
     <script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
+
 </head>
 <body>
 <video id="demovideo" src="https://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956_512kb.mp4" preload="auto" controls></video>
@@ -16,6 +17,8 @@
     <button onclick="document.getElementById('demovideo').pause()">Pausar Video</button>
     <button onclick="document.getElementById('demovideo').volume+=0.1">+ Volum</button>
     <button onclick="document.getElementById('demovideo').volume-=0.1">- Volum</button>
+    <button onclick="document.getElementById('demovideo').currentTime += -2">Rewind</button>
+    <button onclick="document.getElementById('demovideo').currentTime += 2">Forward</button>
 </div>
 
 <div class="test">Back in black:</div>
@@ -27,6 +30,8 @@
     <button onclick="document.getElementById('demo').pause()">Pausar Audio</button>
     <button onclick="document.getElementById('demo').volume+=0.1">+ Volum</button>
     <button onclick="document.getElementById('demo').volume-=0.1">- Volum</button>
+    <button onclick="document.getElementById('demo').currentTime += -2">Rewind</button>
+    <button onclick="document.getElementById('demo').currentTime += 2">Forward</button>
 </div>
 
 
@@ -40,6 +45,8 @@
     <button onclick="document.getElementById('demo2').pause()">Pausar Audio</button>
     <button onclick="document.getElementById('demo2').volume+=0.1">+l Volum</button>
     <button onclick="document.getElementById('demo2').volume-=0.1">- Volum</button>
+    <button onclick="document.getElementById('demo2').currentTime += -2">Rewind</button>
+    <button onclick="document.getElementById('demo2').currentTime += 2">Forward</button>
 </div>
 
 <div class="test">Audio Bullet in the head:</div>
@@ -52,6 +59,8 @@
     <button onclick="document.getElementById('demo3').pause()">Pausar Audio</button>
     <button onclick="document.getElementById('demo3').volume+=0.1">+ Volum</button>
     <button onclick="document.getElementById('demo3').volume-=0.1">- Volum</button>
+    <button onclick="document.getElementById('demo3').currentTime += -2">Rewind</button>
+    <button onclick="document.getElementById('demo3').currentTime += 2">Forward</button>
 </div>
 
 <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"data-setup="{}">
